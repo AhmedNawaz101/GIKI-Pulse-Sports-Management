@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIKI Pulse - Inbox</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="announcements.css">
+</head>
+<body>
+    <div class="top-bar">
+        <button class="menu-btn" id="openMenu">☰</button>
+        <h2 class="app-name">Inbox</h2>
+        <div class="user-profile">S</div>
+    </div>
+    
+    <main class="content-area">
+        <div class="announcements-card">
+            <ul class="announcement-list">
+                <!-- Unread Item 1 -->
+                <li class="announcement-item unread">
+                    <div class="icon-placeholder">⚠️</div>
+                    <div class="announcement-content">
+                        <span class="text">Football Field closed for maintenance until further notice.</span>
+                        <span class="time">10 min ago</span>
+                    </div>
+                </li>
+                
+                <!-- Unread Item 2 -->
+                <li class="announcement-item unread">
+                    <div class="icon-placeholder">🎾</div>
+                    <div class="announcement-content">
+                        <span class="text">New squash court slots available for next week!</span>
+                        <span class="time">1 hr ago</span>
+                    </div>
+                </li>
+
+                <!-- Read Item -->
+                <li class="announcement-item">
+                    <div class="icon-placeholder">💪</div>
+                    <div class="announcement-content">
+                        <span class="text">Gym membership renewal reminder. Due in 3 days.</span>
+                        <span class="time">Yesterday</span>
+                    </div>
+                </li>
+
+                <!-- Read Item -->
+                <li class="announcement-item">
+                    <div class="icon-placeholder">📅</div>
+                    <div class="announcement-content">
+                        <span class="text">Team tryouts schedule updated. Check Events tab.</span>
+                        <span class="time">1 day ago</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="action-buttons">
+            <button class="btn-action" id="openNotificationBtn">Mark all read</button>
+            <div style="width: 1px; background: #ddd; margin: 5px 0;"></div>
+            <button class="btn-action" id="clearNotificationBtn">Clear all</button>
+        </div>
+    </main>
+
+    <nav class="bottom-nav">
+        <button class="nav-item"><span class="icon">🏠</span>Home</button>
+        <button class="nav-item"><span class="icon">🗓️</span>Bookings</button>
+        <button class="nav-item"><span class="icon">🏆</span>Events</button>
+        <button class="nav-item active"><span class="icon">🔔</span>Inbox</button>
+        <button class="nav-item"><span class="icon">👥</span>Team</button>
+    </nav>
+    <script src="app.js"></script>
+</body>
+</html>

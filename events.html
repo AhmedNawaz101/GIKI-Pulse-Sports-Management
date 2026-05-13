@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIKI Pulse - Events</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="events.css">
+</head>
+<body>
+    <div class="top-bar">
+        <button class="menu-btn" id="openMenu">☰</button>
+        <h2 class="app-name">Events</h2>
+        <div class="user-profile">S</div>
+    </div>
+    
+    <main class="content-area">
+        <div class="event-list">
+            
+            <div class="card trial-card">
+                <h2 class="trial-title">Football Trials</h2>
+                <div class="trial-details">
+                    <div class="coach-photo" style="background: #ccc;"></div>
+                    <div class="info">
+                        <p class="date">10 Sept</p>
+                        <p class="time-place">5:00 PM - 6:00 PM</p>
+                        <p class="time-place">Football Ground</p>
+                    </div>
+                </div>
+                <button class="apply-btn" data-trial="Football Trials">Apply</button>
+            </div>
+
+            <div class="card trial-card">
+                <h2 class="trial-title">Tennis Trials</h2>
+                <div class="trial-details">
+                    <div class="coach-photo" style="background: #ccc;"></div>
+                    <div class="info">
+                        <p class="date">9 Sept</p>
+                        <p class="time-place">8:00 PM - 9:00 PM</p>
+                        <p class="time-place">Tennis Court</p>
+                    </div>
+                </div>
+                <button class="apply-btn" data-trial="Tennis Trials">Apply</button>
+            </div>
+
+        </div>
+    </main>
+
+    <nav class="bottom-nav">
+        <button class="nav-item"><span class="icon">🏠</span>Home</button>
+        <button class="nav-item"><span class="icon">🗓️</span>Bookings</button>
+        <button class="nav-item active"><span class="icon">🏆</span>Events</button>
+        <button class="nav-item"><span class="icon">🔔</span>Inbox</button>
+        <button class="nav-item"><span class="icon">👥</span>Team</button>
+    </nav>
+    <script src="app.js"></script>
+</body>
+</html>

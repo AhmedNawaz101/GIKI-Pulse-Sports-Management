@@ -1,0 +1,108 @@
+/* announcements.css - Redesigned for Mobile Aesthetics */
+
+.announcements-card {
+    background: transparent; /* Remove container background */
+    box-shadow: none;
+    padding: 0;
+}
+
+.announcement-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between notification cards */
+}
+
+.announcement-item {
+    display: flex;
+    align-items: flex-start; /* Align to top for multi-line text */
+    padding: 16px;
+    background-color: white;
+    border-radius: 16px; /* Rounded corners like iOS widgets */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    border: 1px solid rgba(0,0,0,0.02);
+    transition: transform 0.2s ease;
+}
+
+.announcement-item:active {
+    transform: scale(0.98);
+}
+
+.announcement-item.unread {
+    background-color: #fff;
+    border-left: 4px solid #e6601e; /* Orange indicator line on left */
+}
+
+.announcement-item.unread .text {
+    font-weight: 600;
+    color: #000;
+}
+
+.dot {
+    /* Replaced dot with the border-left style, so hiding this or using it for icons */
+    display: none; 
+}
+
+.icon-placeholder {
+    width: 36px;
+    height: 36px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    font-size: 1.1rem;
+    color: #666;
+    flex-shrink: 0;
+}
+
+.announcement-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.text {
+    font-size: 0.95rem;
+    color: #444;
+    margin-bottom: 6px;
+    line-height: 1.4;
+}
+
+.time {
+    font-size: 0.75rem;
+    color: #999;
+}
+
+.action-buttons {
+    position: fixed;
+    bottom: 90px; /* Above the bottom nav */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 15px;
+    z-index: 90;
+    background: rgba(255,255,255,0.9);
+    padding: 10px 20px;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    backdrop-filter: blur(10px);
+}
+
+.action-buttons .btn-action {
+    width: auto;
+    padding: 8px 20px;
+    font-size: 0.85rem;
+    margin: 0;
+    border-radius: 20px;
+    background-color: transparent;
+    color: #4b382d;
+    font-weight: 600;
+}
+
+.action-buttons .btn-action:first-child {
+    color: #e6601e; /* Highlight 'Mark Read' */
+}
